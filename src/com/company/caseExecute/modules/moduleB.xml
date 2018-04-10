@@ -1,0 +1,46 @@
+<suite name="Assessment" parallel= "none">
+<parameter name="classfullname"  value="LMS"/>
+
+<test name="Test1: Create Syllabus"  preserve_order="true">
+<classes>
+<class name="com.tcc.login.Login_admin"/>
+<class name="com.tcc.assessment.facultyrole.SetCurrentWorkClassName"/>
+<class name="com.tcc.Class.Syllabus.GoToSyllabus"/>
+<class name="com.tcc.Class.Syllabus.GoToSyllabusAdmin"/>
+<class name="com.tcc.Class.Syllabus.SyllabusAdmin.BasicInfo"/>
+<class name="com.tcc.Class.Syllabus.SyllabusAdmin.Rubrics"/>
+<class name="com.tcc.Class.Syllabus.SyllabusAdmin.Files"/>
+<class name="com.tcc.Class.Syllabus.SyllabusAdmin.Schedule"/>
+<class name="com.tcc.Class.Syllabus.SyllabusAdmin.Materials"/>
+
+<class name="com.tcc.logout.LogOut" />
+</classes>
+</test>
+
+  
+<test name="Test2: Check Syllabus"  preserve_order="true">
+<classes>
+<class name="com.tcc.login.Login_student"/>
+<class name="com.tcc.assessment.facultyrole.SetCurrentWorkClassName"/>
+<class name="com.tcc.Class.Syllabus.GoToSyllabus"/>
+<class name="com.tcc.Class.Syllabus.Syllabus.CheckSyllabus"/>
+
+
+<class name="com.tcc.logout.LogOut" />
+</classes>
+</test>
+
+
+<test name="Test3: Delete Syllabus"  preserve_order="true">
+<classes>
+<class name="com.tcc.login.Login_admin"/>
+<class name="com.tcc.assessment.facultyrole.SetCurrentWorkClassName"/>
+<class name="com.tcc.Class.Syllabus.GoToSyllabusAdmin"/>
+<class name="com.tcc.Class.Syllabus.SyllabusAdmin.DeleteSyllabus"/>
+
+<class name="com.tcc.logout.LogOut" />
+<class name="com.tcc.logout.QuitDriver"/>
+</classes>
+</test>
+
+</suite>

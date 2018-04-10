@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="AUTO_TEST" basedir="./.." default="run_tests">
+	<property name="src" value="${basedir}/src" />
+	<property name="dest" value="classes" />
+	<property name="lib.dir" value="${basedir}/lib" />
+	<property name="output.dir" value="${basedir}/../autotest_tomcat/tmp/test-output" />
+	<path id="compile.path">
+		<fileset dir="${lib.dir}/">
+			<include name="*.jar" />
+			<include name="cclibs/*.jar" />
+		</fileset>
+		<pathelement location="${src}" />
+		<pathelement location="${dest}" />
+	</path>
+	<target name="init">
+		<mkdir dir="${dest}" />
+	</target>
+	<target name="compile" depends="init">
+		<echo>compile tests</echo>
+		<javac srcdir="${src}" destdir="${dest}" encoding="UTF-8" classpathref="compile.path" />
+	</target>
+	<taskdef resource="testngtasks" classpath="${lib.dir}/testng-6.5.1.jar" />
+	<!-- test begin-->
+	<target name="run_tests" depends="compile">
+		<echo>running tests</echo>
+		<testng classpathref="compile.path" outputdir="${output.dir}" haltonfailure="no" failureproperty="failed" parallel="true" threadCount="1"
+			useDefaultListeners="false" 
+			listeners="org.uncommons.reportng.HTMLReporter,org.testng.reporters.FailedReporter" >  
+			<jvmarg value="-Dproperty_manager.properties=D:/workspace/AutoTest/apps/timecruiser.properties" />
+			<xmlfileset dir="${basedir}/apps/ClassTools" includes="Syllabus/Syllabus.xml" />
+				
+			<sysproperty key="org.uncommons.reportng.title" value="Auto Test Report" />  
+			
+		</testng>
+	</target>
+</project>

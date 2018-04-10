@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [baidu]" parallel="none">
+  <test name="Test1: test baidu search(failed)" parallel="none">
+    <classes>
+      <class name="com.company.testSuites.businessA.caseA1">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="test_baidu"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.company.testSuites.businessA.caseA1 -->
+    </classes>
+  </test> <!-- Test1: test baidu search(failed) -->
+</suite> <!-- Failed suite [baidu] -->

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="D:/Selenium Jar/com.sysdeo.eclipse.tomcat_3.3.1.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium Jar/commons-configuration-1.6.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium Jar/guice-3.0.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium Jar/junit-4.10.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium Jar/junit-dep-4.10.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium Jar/poi-3.10.1-20140818.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium Jar/poi-examples-3.10.1-20140818.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium Jar/poi-ooxml-3.10.1-20140818.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium Jar/poi-ooxml-schemas-3.10.1-20140818.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium Jar/poi-scratchpad-3.10.1-20140818.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium Jar/reportng-1.1.3.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium Jar/selenium-java-2.28.0.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium Jar/selenium-java-2.40.0.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium Jar/selenium-java-2.40.0-srcs.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium Jar/selenium-java-2.47.1.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium Jar/selenium-java-2.47.1-srcs.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium Jar/selenium-java-client-driver-0.9.2.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium Jar/selenium-server-standalone-2.40.0.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium Jar/testng-6.5.1.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium Jar/velocity-dep-1.4.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium Jar/xmlbeans-2.5.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
